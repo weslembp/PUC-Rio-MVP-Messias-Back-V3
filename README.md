@@ -16,7 +16,7 @@ Antes de executar, abra o arquivo `script.js` e substitua a chave pela fornecida
 
 ```javascript
 // script.js — linha 4
-const MOCKAROO_API_KEY = 'SUA_CHAVE_AQUI';
+const MOCKAROO_API_KEY = ''; // Altere aqui APIKEY
 ```
 
 Essa é a única alteração necessária — todas as requisições ao Mockaroo usam essa variável automaticamente.
