@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  # BACK
+  api-messias:
+    build: ./back_v2
+    container_name: api-messias
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./back_v2/database:/app/database
+
+  # FRONT
+  front-messias:
+    build: ./front
+    container_name: front-messias
+    ports:
+      - "80:80"
+    depends_on:
+      - api-messias
